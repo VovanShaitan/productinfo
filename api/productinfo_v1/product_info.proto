@@ -1,6 +1,9 @@
 syntax = "proto3";
 
-package ecommerce;
+option go_package = "github.com/VovanShaitan/productinfo/api/productinfo_v1;productinfo_v1";
+
+
+package productinfo_v1;
 
 service ProductInfo {
     rpc addProduct(Product) returns (ProductID);
