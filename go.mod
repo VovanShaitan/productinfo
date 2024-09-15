@@ -3,6 +3,7 @@ module github.com/VovanShaitan/productinfo
 go 1.23.1
 
 require (
+	github.com/gofrs/uuid v4.4.0+incompatible
 	google.golang.org/grpc v1.66.2
 	google.golang.org/protobuf v1.34.2
 )
