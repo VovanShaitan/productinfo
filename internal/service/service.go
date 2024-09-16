@@ -7,6 +7,7 @@ import (
 	"google.golang.org/grpc"
 
 	pb "github.com/VovanShaitan/productinfo/pkg/productinfo_v1"
+
 )
 
 const (

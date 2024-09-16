@@ -9,6 +9,7 @@ import (
 	"google.golang.org/grpc/status"
 
 	pb "github.com/VovanShaitan/productinfo/pkg/productinfo_v1"
+
 )
 
 type server struct {
@@ -38,3 +39,6 @@ func (s *server) GetProduct(ctx context.Context, in *pb.ProductID) (*pb.Product,
 	}
 	return nil, status.Errorf(codes.NotFound, "Product does not exist.", in.Value)
 }
+
+// func (s *server) mustEmbedUnimplementedProductInfoServer() {}
+// func (s *server) testEmbeddedByValue()                     {}
