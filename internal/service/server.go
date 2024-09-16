@@ -14,6 +14,7 @@ import (
 
 type server struct {
 	productMap map[string]*pb.Product
+	pb.UnsafeProductInfoServer
 }
 
 // AddProduct implements productinfo_v1.AddProduct
